@@ -1,0 +1,43 @@
+# Copyright (C) 2024 tapTapCode
+# This file is distributed under the same license as the ShopLaz Reviews plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: ShopLaz Reviews 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/tapTapCode/shoplaz-reviews/issues\n"
+"POT-Creation-Date: 2024-11-07 12:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: includes/class-shoplaz-reviews-admin.php
+msgid "Reviews"
+msgstr ""
+
+#: includes/class-shoplaz-reviews-admin.php
+msgid "Store URLs"
+msgstr ""
+
+#: includes/class-shoplaz-reviews-admin.php
+msgid "Settings"
+msgstr ""
+
+#: public/views/reviews-display.php
+msgid "Reviews"
+msgstr ""
+
+#: public/views/reviews-display.php
+msgid "stars"
+msgstr ""
+
+#: public/views/reviews-display.php
+msgid "reviews"
+msgstr ""
+
+#: public/views/reviews-display.php
+msgid "No reviews yet."
+msgstr ""
+
