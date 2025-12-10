@@ -92,7 +92,17 @@ function CopilotContent() {
         }
         const recommendationResponse = response.data as RecommendationResponse;
         const recommendationData = recommendationResponse.data || response.data;
-        const recommendation = recommendationData?.recommendation || recommendationData;
+        
+        // Extract the recommendation, ensuring it's a CopilotRecommendation type
+        let recommendation: CopilotRecommendation | null = null;
+        
+        if ('recommendation' in recommendationData && recommendationData.recommendation) {
+          recommendation = recommendationData.recommendation;
+        } else if ('id' in recommendationData && 'recommendation_text' in recommendationData) {
+          // If recommendationData itself is a CopilotRecommendation
+          recommendation = recommendationData as CopilotRecommendation;
+        }
+        
         if (recommendation) {
           setRecommendation(recommendation);
         } else {

@@ -90,6 +90,16 @@ class ApiClient {
       }
 
       if (!response.ok) {
+        // Type guard for error response
+        interface ErrorResponse {
+          error?: {
+            code?: string;
+            message?: string;
+            details?: unknown;
+          };
+        }
+        const errorData = data as ErrorResponse;
+        
         // Handle authentication errors specifically
         if (response.status === 401 || response.status === 403) {
           // Clear invalid token
@@ -98,22 +108,24 @@ class ApiClient {
           }
           return {
             error: {
-              code: data.error?.code || 'UNAUTHORIZED',
-              message: data.error?.message || 'Authentication required. Please sign in.',
+              code: errorData.error?.code || 'UNAUTHORIZED',
+              message: errorData.error?.message || 'Authentication required. Please sign in.',
             },
           };
         }
 
         return {
           error: {
-            code: data.error?.code || 'UNKNOWN_ERROR',
-            message: data.error?.message || `Request failed with status ${response.status}`,
-            details: data.error?.details,
+            code: errorData.error?.code || 'UNKNOWN_ERROR',
+            message: errorData.error?.message || `Request failed with status ${response.status}`,
+            details: errorData.error?.details && typeof errorData.error.details === 'object' 
+              ? (errorData.error.details as Record<string, unknown>)
+              : undefined,
           },
         };
       }
 
-      return { data };
+      return { data: data as T };
     } catch (error) {
       // Handle network errors and other fetch failures
       let errorMessage = 'Network error occurred';
