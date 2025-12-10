@@ -1,0 +1,21 @@
+{
+  "name": "workout-supplement-copilot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI-powered fitness copilot with FDA-compliant supplement recommendations",
+  "workspaces": [
+    "frontend",
+    "backend",
+    "shared"
+  ],
+  "scripts": {
+    "build": "cd frontend && npm run build",
+    "dev": "cd frontend && npm run dev"
+  },
+  "dependencies": {
+    "next": "16.0.7"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
