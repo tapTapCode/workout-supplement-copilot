@@ -137,6 +137,14 @@ The `vercel.json` file is already configured with the correct build commands and
 Add these in your Vercel project settings:
 - `NEXT_PUBLIC_API_URL` - Your backend API URL (e.g., `https://api.workout-copilot.aws.com`)
 
+### Troubleshooting Vercel Build Issues
+
+**Git Submodule Warning:**
+If you see "Failed to fetch one or more git submodules" warning:
+- This is harmless - the repository has no submodules
+- The warning has been disabled in GitHub Actions workflows
+- If it persists in Vercel, it can be safely ignored as it doesn't affect the build
+
 ## License
 
 MIT
