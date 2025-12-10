@@ -61,11 +61,11 @@ describe('Rate Limiter', () => {
         mockResponse as Response,
         nextFunction
       );
-      limiter(
-        mockRequest as Request,
-        mockResponse as Response,
-        nextFunction
-      );
+        limiter(
+          mockRequest as Request,
+          mockResponse as Response,
+          nextFunction
+        );
 
       expect(nextFunction).toHaveBeenCalledTimes(2);
       expect(mockResponse.status).toHaveBeenCalledWith(429);
