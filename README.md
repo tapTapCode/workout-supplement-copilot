@@ -118,14 +118,18 @@ Visit: **http://localhost:3000**
 
 ### Vercel (Frontend)
 
-**Important**: For Vercel deployment, do NOT set the Root Directory to `frontend`. Keep it as the repository root (default).
+**Important**: For Vercel deployment, you MUST set the Root Directory to `frontend` in Vercel project settings.
+
+1. Go to **Project Settings** → **General**
+2. Under **Root Directory**, select `frontend`
+3. Save the changes
 
 The `vercel.json` file is configured to:
-- Build from the `frontend/` directory
-- Output to `frontend/.next`
-- Use `npm ci` for faster, reliable installs
+- Build from the `frontend/` directory (when Root Directory is set to `frontend`)
+- Output to `.next` (relative to frontend/)
+- Use `npm install` for dependency installation
 
-The frontend uses TypeScript path mapping to reference the `shared/` package, so the repository root must be available during build.
+**Note**: The frontend uses TypeScript path mapping to reference the `shared/` package. When Root Directory is set to `frontend`, the path `../shared/src` will correctly resolve to the shared package.
 
 ### Environment Variables for Vercel
 

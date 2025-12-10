@@ -20,23 +20,31 @@ Complete step-by-step guide to deploy the Workout & Supplement Copilot frontend 
 
 ### Important: Root Directory
 
-**DO NOT set Root Directory to `frontend`** - Keep it as the repository root (default/empty).
+**CRITICAL: Set Root Directory to `frontend`** in Vercel project settings.
 
-The `vercel.json` file is configured to build from the `frontend/` directory, and the frontend needs access to the `shared/` package via TypeScript path mapping.
+1. After importing, click **"Configure Project"** or go to **Settings** → **General**
+2. Under **Root Directory**, click **"Edit"**
+3. Select `frontend` from the dropdown
+4. Click **"Continue"** or **"Save"**
+
+This tells Vercel that the Next.js app is in the `frontend/` directory.
 
 ### Framework Preset
 
-- Vercel should auto-detect **Next.js** from the root `package.json`
+- Vercel should auto-detect **Next.js** from `frontend/package.json`
 - If it doesn't, manually select **Next.js**
 
 ### Build Settings
 
-The `vercel.json` file handles these automatically:
-- **Build Command**: `cd frontend && npm install && npm run build`
-- **Output Directory**: `frontend/.next`
-- **Install Command**: `cd frontend && npm install`
+When Root Directory is set to `frontend`, Vercel will automatically:
+- Use `frontend/` as the working directory
+- Run commands from within `frontend/`
+- The `vercel.json` file is configured for this setup:
+  - **Build Command**: `npm install && npm run build` (runs in frontend/)
+  - **Output Directory**: `.next` (relative to frontend/)
+  - **Install Command**: `npm install` (runs in frontend/)
 
-You can leave these as default or verify they match `vercel.json`.
+**Note**: The `vercel.json` commands don't need `cd frontend` because Vercel is already in that directory when Root Directory is set correctly.
 
 ## Step 3: Environment Variables
 
