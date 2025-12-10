@@ -44,8 +44,13 @@ Add these in **Project Settings** → **Environment Variables**:
 
 ### Required:
 - `NEXT_PUBLIC_API_URL` - Your backend API URL
-  - Example: `https://api.workout-copilot.aws.com`
-  - Or for local testing: `http://localhost:3001`
+  - **For Production**: Your deployed backend URL (e.g., `https://api.workout-copilot.aws.com`)
+  - **For Local Development**: `http://localhost:3001`
+  - **How to find your backend URL**:
+    - If using AWS Lambda/API Gateway: Check your API Gateway endpoint
+    - If using a custom domain: Use your custom domain
+    - If backend is on a different service: Use that service's URL
+    - Default backend runs on port 3001 locally
 
 ### Optional (if needed):
 - Any other environment variables your frontend needs
@@ -53,6 +58,7 @@ Add these in **Project Settings** → **Environment Variables**:
 **Important**: 
 - Variables starting with `NEXT_PUBLIC_` are exposed to the browser
 - Add the same variables for **Production**, **Preview**, and **Development** environments
+- The value should be the full URL including protocol (http:// or https://) but without trailing slash
 
 ## Step 4: Deploy
 
