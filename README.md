@@ -114,6 +114,29 @@ Visit: **http://localhost:3000**
 - **AI**: LangChain, LangGraph, OpenAI GPT-4
 - **Deployment**: Vercel (frontend), AWS (backend)
 
+## Deployment
+
+### Vercel (Frontend)
+
+**Important**: When deploying to Vercel, you must set the **Root Directory** to `frontend`:
+
+1. Go to your Vercel project settings
+2. Navigate to **Settings** → **General**
+3. Under **Root Directory**, select `frontend`
+4. Save the changes
+
+Alternatively, you can set it when importing the project:
+- When importing from GitHub, click **"Configure Project"**
+- Set **Root Directory** to `frontend`
+- Vercel will automatically detect Next.js from `frontend/package.json`
+
+The `vercel.json` file is already configured with the correct build commands and output directory.
+
+### Environment Variables for Vercel
+
+Add these in your Vercel project settings:
+- `NEXT_PUBLIC_API_URL` - Your backend API URL (e.g., `https://api.workout-copilot.aws.com`)
+
 ## License
 
 MIT
