@@ -10,7 +10,25 @@ import type {
 } from '@workout-copilot/shared';
 import { API_ENDPOINTS, STORAGE_KEYS, PAGINATION } from './constants';
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
+// Use relative URL in production (Vercel rewrites handle /api/*)
+// Use NEXT_PUBLIC_API_URL if set, otherwise use relative path for Vercel rewrites
+const getApiBaseUrl = (): string => {
+  if (typeof window === 'undefined') {
+    // Server-side: use environment variable or default
+    return process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
+  }
+  
+  // Client-side: check if we have an explicit API URL
+  const explicitUrl = process.env.NEXT_PUBLIC_API_URL;
+  if (explicitUrl) {
+    return explicitUrl;
+  }
+  
+  // If no explicit URL, use relative path (works with Vercel rewrites)
+  return '';
+};
+
+const API_BASE_URL = getApiBaseUrl();
 
 class ApiClient {
   private getAuthToken(): string | null {
