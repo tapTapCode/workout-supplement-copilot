@@ -24,6 +24,21 @@ export function LoginForm({ className, ...props }: React.ComponentProps<'div'>) 
     setError(null);
     setLoading(true);
 
+    // Validate email
+    if (!email || !email.trim()) {
+      setError('Email is required');
+      setLoading(false);
+      return;
+    }
+
+    // Basic email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setError('Please enter a valid email address');
+      setLoading(false);
+      return;
+    }
+
     // Validate password
     if (!password || password.length < 6) {
       setError('Password must be at least 6 characters');
@@ -45,23 +60,50 @@ export function LoginForm({ className, ...props }: React.ComponentProps<'div'>) 
         body: JSON.stringify({ email, password }),
       });
 
-      const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.error?.message || (isLogin ? 'Login failed' : 'Sign up failed'));
+      // Check if response is JSON before parsing
+      const contentType = response.headers.get('content-type');
+      let data: any;
+      
+      if (contentType && contentType.includes('application/json')) {
+        try {
+          data = await response.json();
+        } catch (parseError) {
+          throw new Error(`Invalid response from server. Status: ${response.status}`);
+        }
+      } else {
+        // Non-JSON response
+        const text = await response.text();
+        throw new Error(`Server returned non-JSON response. Status: ${response.status}. ${text.substring(0, 100)}`);
       }
 
-      if (data.data?.token) {
-        localStorage.setItem('auth_token', data.data.token);
+      if (!response.ok) {
+        const errorMessage = data.error?.message || data.message || (isLogin ? 'Login failed' : 'Sign up failed');
+        throw new Error(errorMessage);
+      }
+
+      // Handle response structure: { data: { token, user } }
+      const token = data.data?.token || data.token;
+      
+      if (token) {
+        localStorage.setItem('auth_token', token);
         // Trigger custom event so Navigation component updates immediately
         window.dispatchEvent(new Event('authStateChange'));
         // Redirect to workouts page after successful auth
         router.push('/workouts');
       } else {
-        throw new Error('No token received');
+        throw new Error('No token received from server');
       }
     } catch (err) {
-      setError(err instanceof Error ? err.message : (isLogin ? 'Login failed' : 'Sign up failed'));
+      let errorMessage = isLogin ? 'Login failed' : 'Sign up failed';
+      
+      if (err instanceof Error) {
+        errorMessage = err.message;
+      } else if (err instanceof TypeError && err.message.includes('fetch')) {
+        errorMessage = `Cannot connect to server. Please check if the backend is running at ${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001'}`;
+      }
+      
+      setError(errorMessage);
+      console.error('Auth error:', err);
     } finally {
       setLoading(false);
     }
