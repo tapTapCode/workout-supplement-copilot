@@ -1,0 +1,184 @@
+# TaysLuxe Frameworks & Methods
+#
+# Add your proprietary frameworks, methods, and approaches here.
+# These are the systems and processes that make TaysLuxe unique.
+#
+# Format:
+#   - name: "Framework Name"
+#     category: "hair_education" or "business_mentorship"
+#     description: "What this framework helps with"
+#     when_to_use: "When to apply this"
+#     steps: 
+#       - "Step 1"
+#       - "Step 2"
+#     key_points:
+#       - "Important thing to remember"
+#     example: "Real example of using this"
+
+frameworks:
+
+  # =============================================================================
+  # HAIR FRAMEWORKS
+  # =============================================================================
+  
+  - name: "The Porosity-First Approach"
+    category: "hair_education"
+    description: "How to choose products and techniques based on porosity, not curl pattern"
+    when_to_use: "When recommending products or troubleshooting any hair issue"
+    steps:
+      - "Identify porosity (float test, spray test, or slide test)"
+      - "Match product weight to porosity (light for low, heavy for high)"
+      - "Choose application method (LCO for low porosity, LOC for high)"
+      - "Select appropriate oils (lightweight vs heavy based on porosity)"
+      - "Adjust technique (heat for low porosity, sealing focus for high)"
+    key_points:
+      - "Porosity matters more than curl pattern for product selection"
+      - "Low porosity needs lightweight products and heat to open cuticles"
+      - "High porosity needs heavier products and focus on sealing moisture"
+      - "Medium porosity is the most flexible"
+    example: |
+      Client says: "I'm a 4C and nothing works for my hair"
+      
+      Wrong approach: Recommend "4C products"
+      
+      Right approach: "Let's figure out your porosity first. That matters more than your curl pattern for finding products that actually work."
+      
+      If they're low porosity 4C: Light products, LCO method, avoid heavy butters
+      If they're high porosity 4C: Heavy creams/butters, LOC method, protein treatments
+
+  - name: "The Protein-Moisture Balance Check"
+    category: "hair_education"  
+    description: "How to diagnose and fix protein-moisture imbalance"
+    when_to_use: "When hair is breaking, feels off, or products stopped working"
+    steps:
+      - "Do the strand test (stretch a wet strand)"
+      - "Assess symptoms (brittle vs mushy)"
+      - "Identify the imbalance"
+      - "Treat appropriately"
+      - "Maintain balance going forward"
+    key_points:
+      - "Stretches a lot + doesn't bounce back = needs protein"
+      - "Barely stretches + snaps = needs moisture"
+      - "Healthy hair stretches slightly and bounces back"
+      - "After protein treatment, always follow with moisture"
+    example: |
+      Client: "My hair keeps breaking and I've been deep conditioning every week!"
+      
+      Questions to ask:
+      - What does your hair feel like? Brittle or mushy?
+      - When you pull a wet strand, does it stretch or snap?
+      - Have you done any protein treatments lately?
+      
+      If brittle + snapping → Too much protein, needs moisture
+      If mushy + over-stretchy → Too much moisture, needs protein
+
+  # ADD YOUR HAIR FRAMEWORKS BELOW
+  #
+  # - name: ""
+  #   category: "hair_education"
+  #   description: ""
+  #   when_to_use: ""
+  #   steps:
+  #     - ""
+  #   key_points:
+  #     - ""
+  #   example: |
+  #     
+
+  # =============================================================================
+  # BUSINESS FRAMEWORKS
+  # =============================================================================
+
+  - name: "The TaysLuxe Pricing Formula"
+    category: "business_mentorship"
+    description: "How to price services profitably"
+    when_to_use: "When setting or evaluating service prices"
+    steps:
+      - "Calculate your hourly rate (annual goal ÷ 50 weeks ÷ working hours)"
+      - "Determine time cost (hours × hourly rate)"
+      - "Track product cost per service"
+      - "Calculate overhead per service (monthly overhead ÷ monthly services)"
+      - "Add profit margin (20-30%)"
+      - "Total = Time + Products + Overhead + Profit"
+    key_points:
+      - "Most stylists forget overhead - that's why they're broke"
+      - "Profit is NOT your salary - that's in the time cost"
+      - "If you're not at 30%+ profit margin, you're undercharging"
+      - "Raise prices when booked 4+ weeks out consistently"
+    example: |
+      Pricing a silk press (3 hours):
+      
+      Time: 3 hrs × $40/hr = $120
+      Products: $15
+      Overhead: $25/service
+      Subtotal: $160
+      Profit (25%): $40
+      TOTAL: $200
+      
+      If you're charging $80, you're paying to do hair.
+
+  - name: "The Client Attraction System"
+    category: "business_mentorship"
+    description: "How to consistently get new clients"
+    when_to_use: "When building or growing clientele"
+    steps:
+      - "Optimize your social presence (post 3-5x/week with local hashtags)"
+      - "Make booking effortless (online booking, clear prices)"
+      - "Activate your network (everyone you know should know what you do)"
+      - "Create a referral program (incentive for referrer AND new client)"
+      - "Collect and display testimonials/photos (social proof)"
+      - "Follow up with leads within 24 hours"
+    key_points:
+      - "Consistency beats perfection - post regularly even if not perfect"
+      - "People book from their phones - make it mobile-friendly"
+      - "Referrals from happy clients convert better than cold leads"
+      - "Show your work - before/afters are your best marketing"
+    example: |
+      New stylist: "I've been open 2 months and barely have clients"
+      
+      Checklist:
+      ✓ Posting at least 3x/week? With local hashtags?
+      ✓ Easy online booking set up?
+      ✓ Have you told everyone you know?
+      ✓ Asked satisfied clients for referrals?
+      ✓ Google Business Profile claimed?
+      
+      Usually 2-3 of these are missing. Fix them and give it 3 more months.
+
+  - name: "The Retention Formula"
+    category: "business_mentorship"
+    description: "How to keep clients coming back"
+    when_to_use: "When client retention is low or building loyal clientele"
+    steps:
+      - "Rebook before they leave (don't ask IF, ask WHEN)"
+      - "Send appointment reminders (1 week, 1 day, morning of)"
+      - "Follow up after service (check in 2-3 days later)"
+      - "Remember personal details (use notes in your booking system)"
+      - "Create a loyalty program (every 10th visit discount, birthday offer)"
+      - "Handle issues immediately (problems are opportunities)"
+    key_points:
+      - "Retention is cheaper than acquisition - focus here first"
+      - "Assume the rebook: 'Same time in 6 weeks?' not 'Would you like to rebook?'"
+      - "The follow-up text separates good stylists from great ones"
+      - "A problem handled well creates more loyalty than no problem at all"
+    example: |
+      Instead of: "Would you like to book your next appointment?"
+      
+      Say: "Let's get you on the calendar. Are we doing 6 weeks or 8 weeks?"
+      
+      Then: Text them 2 days later "Hey! How's your hair holding up? Any questions about maintaining it?"
+      
+      That follow-up text = they remember you when someone asks for a stylist recommendation.
+
+  # ADD YOUR BUSINESS FRAMEWORKS BELOW
+  #
+  # - name: ""
+  #   category: "business_mentorship"
+  #   description: ""
+  #   when_to_use: ""
+  #   steps:
+  #     - ""
+  #   key_points:
+  #     - ""
+  #   example: |
+  #     

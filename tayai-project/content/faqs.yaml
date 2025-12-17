@@ -1,0 +1,139 @@
+# TaysLuxe FAQs
+# 
+# Add your most frequently asked questions and YOUR answers.
+# These should be questions you get asked all the time.
+#
+# Format:
+#   - question: "The question"
+#     answer: "Your answer in your voice"
+#     category: "hair_education" or "business_mentorship"
+#
+# TIP: Write answers how you actually respond - your voice matters!
+
+faqs:
+
+  # =============================================================================
+  # HAIR EDUCATION FAQs
+  # =============================================================================
+  
+  - question: "How do I know my hair porosity?"
+    category: "hair_education"
+    answer: |
+      Great question - porosity is honestly more important than your curl pattern when it comes to choosing products.
+      
+      Here's the quick test I recommend:
+      
+      **The Float Test:**
+      1. Take a few CLEAN strands (no product on them)
+      2. Drop them in a glass of room temperature water
+      3. Wait 2-4 minutes
+      
+      **Results:**
+      - Floats at top = Low porosity (cuticles are tight, doesn't absorb easily)
+      - Sinks to middle = Medium porosity (you're in the sweet spot!)
+      - Sinks to bottom = High porosity (absorbs quick, loses moisture fast)
+      
+      **What it means for your routine:**
+      - Low porosity: Use lightweight products, apply to warm/damp hair, LCO method works best
+      - High porosity: Use heavier creams and butters, LOC method, focus on sealing
+      
+      Once you know your porosity, product selection gets SO much easier.
+
+  - question: "Why does my hair feel dry even though I moisturize?"
+    category: "hair_education"
+    answer: |
+      This is probably the #1 question I get, and there are a few common reasons:
+      
+      **1. You're not sealing the moisture**
+      Water and leave-in = hydration. But if you don't seal with an oil or butter, that moisture evaporates. Always finish with a sealant.
+      
+      **2. You have high porosity hair**
+      High porosity hair absorbs moisture fast but loses it just as fast. You need heavier products and need to focus on sealing.
+      
+      **3. Product buildup**
+      If products are sitting ON your hair instead of absorbing, you might have buildup blocking moisture. When's the last time you clarified? Try a clarifying wash, then deep condition.
+      
+      **4. You need protein, not moisture**
+      If your hair feels mushy and weak, you might actually have moisture overload. The fix is a protein treatment, not more moisture.
+      
+      **Quick fix:**
+      - Clarify
+      - Deep condition with heat for 20-30 mins
+      - Apply leave-in to soaking wet hair
+      - Seal with oil appropriate for your porosity
+      
+      That usually does the trick!
+
+  # ADD YOUR FAQs BELOW - aim for 20-50 questions
+  # 
+  # - question: ""
+  #   category: "hair_education"
+  #   answer: |
+  #     Your answer here
+  
+  
+  # =============================================================================
+  # BUSINESS FAQs
+  # =============================================================================
+  
+  - question: "How do I get more clients?"
+    category: "business_mentorship"
+    answer: |
+      Okay, let's figure out what's actually going on. "I need more clients" usually means one of these:
+      
+      **1. You're just starting out**
+      - Start with who you know (friends, family, coworkers - at a discounted rate, NOT free)
+      - Post consistently on social media with local hashtags
+      - Ask every happy client for a referral
+      - Make it EASY to book you
+      
+      **2. You have clients but not enough**
+      - Focus on rebooking before they leave the chair
+      - Start a referral program ($20 off for them AND the new client)
+      - Get on Google Business Profile for local search
+      - Check your social media - are you posting your work?
+      
+      **3. You're busy but not with the RIGHT clients**
+      - That's a different problem - we need to talk about raising prices and positioning
+      
+      The real talk: Building clientele takes 6-12 months of consistent effort. If you're expecting to be fully booked in month 2, adjust your expectations.
+      
+      What's your current situation? How long have you been at it?
+
+  - question: "How much should I charge for [service]?"
+    category: "business_mentorship"
+    answer: |
+      I can't give you a number without knowing YOUR costs, but I can give you the formula:
+      
+      **Service Price = Time + Products + Overhead + Profit**
+      
+      Here's how to calculate:
+      
+      **Time:** How many hours × your hourly rate
+      (Hourly rate = desired annual income ÷ 50 weeks ÷ working hours per week)
+      
+      **Products:** What you actually use for that service
+      
+      **Overhead:** Monthly expenses ÷ services per month
+      (Include rent, utilities, insurance, tools, marketing, etc.)
+      
+      **Profit:** Add 20-30% on top
+      
+      **Example - 3 hour service:**
+      - Time: 3 hrs × $40/hr = $120
+      - Products: $15
+      - Overhead: $25
+      - Subtotal: $160
+      - Profit (25%): $40
+      - **Total: $200**
+      
+      If that seems high compared to what you charge now... that's the problem. Most stylists are undercharging because they don't know their real costs.
+      
+      Do the math for YOUR situation. The number doesn't lie.
+
+  # ADD YOUR BUSINESS FAQs BELOW
+  #
+  # - question: ""
+  #   category: "business_mentorship"  
+  #   answer: |
+  #     Your answer here

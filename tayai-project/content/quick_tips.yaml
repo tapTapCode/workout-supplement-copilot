@@ -1,0 +1,93 @@
+# TaysLuxe Quick Tips
+#
+# Short, punchy tips and advice that TayAI can reference.
+# These are the golden nuggets you share all the time.
+#
+# Format:
+#   - tip: "The tip itself"
+#     category: "hair_education" or "business_mentorship"
+#     context: "When this tip applies" (optional)
+
+tips:
+
+  # =============================================================================
+  # HAIR TIPS
+  # =============================================================================
+  
+  - tip: "Your porosity matters more than your curl pattern when choosing products."
+    category: "hair_education"
+    
+  - tip: "If your hair feels mushy and won't hold a curl, you need protein, not more moisture."
+    category: "hair_education"
+    
+  - tip: "Never detangle 4C hair dry. Ever. Always wet with lots of conditioner."
+    category: "hair_education"
+    
+  - tip: "Low porosity hair needs lightweight products. Heavy butters will just sit on top."
+    category: "hair_education"
+    
+  - tip: "High porosity hair loses moisture fast - focus on sealing, not just moisturizing."
+    category: "hair_education"
+    
+  - tip: "Heat damage is permanent. The damaged part has to be cut off. Prevention is everything."
+    category: "hair_education"
+    
+  - tip: "Protective styles should come out after 6-8 weeks MAX. Longer = matting and breakage."
+    category: "hair_education"
+    
+  - tip: "If your edges are thinning, stop wearing tight styles immediately. That damage can be permanent."
+    category: "hair_education"
+    
+  - tip: "Your hair not growing? It probably IS growing - it's breaking at the same rate. Focus on retention, not growth."
+    category: "hair_education"
+    
+  - tip: "Water is the only true moisturizer. Everything else is a sealant or conditioner."
+    category: "hair_education"
+
+  # ADD YOUR HAIR TIPS BELOW
+  #
+  # - tip: ""
+  #   category: "hair_education"
+
+
+  # =============================================================================
+  # BUSINESS TIPS
+  # =============================================================================
+  
+  - tip: "Separate your business and personal bank accounts from day one. Don't learn this lesson the hard way."
+    category: "business_mentorship"
+    
+  - tip: "Set aside 25-30% of every payment for taxes. Future you will thank present you."
+    category: "business_mentorship"
+    
+  - tip: "If you're booked 4+ weeks out consistently, your prices are too low. Raise them."
+    category: "business_mentorship"
+    
+  - tip: "Stop asking 'Would you like to rebook?' Start saying 'Let's get you on the calendar - 6 weeks or 8?'"
+    category: "business_mentorship"
+    
+  - tip: "Client retention is cheaper than client acquisition. A rebooking client costs you $0 in marketing."
+    category: "business_mentorship"
+    
+  - tip: "Your prices should cover time + products + overhead + profit. Most stylists forget overhead - that's why they're broke."
+    category: "business_mentorship"
+    
+  - tip: "Building clientele takes 6-12 months. If you expect to be booked solid in month 2, you'll quit in month 3."
+    category: "business_mentorship"
+    
+  - tip: "The clients who leave when you raise prices were never your people. Let them go."
+    category: "business_mentorship"
+    
+  - tip: "Consistency beats perfection on social media. A decent post today beats a perfect post never."
+    category: "business_mentorship"
+    
+  - tip: "A follow-up text 2 days after their appointment is the easiest way to stand out. Most stylists don't do it."
+    category: "business_mentorship"
+    
+  - tip: "Know your numbers. If you can't tell me your average service price and monthly expenses, we have a problem."
+    category: "business_mentorship"
+
+  # ADD YOUR BUSINESS TIPS BELOW
+  #
+  # - tip: ""
+  #   category: "business_mentorship"
